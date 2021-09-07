@@ -1,0 +1,21 @@
+{
+  "name": "nest-demo",
+  "version": "1.0.0",
+  "description": "study nestjs",
+  "main": "index.js",
+  "scripts": {
+    "start:portal": "cd portal && npm run start",
+    "start:client": "cd client && npm run start",
+    "start:server": "cd server && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oyv1cent/nest-demo.git"
+  },
+  "author": "oyv1cent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oyv1cent/nest-demo/issues"
+  },
+  "homepage": "https://github.com/oyv1cent/nest-demo#readme"
+}
