@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="56072912-eed0-4b6f-9390-188b51df1f4e">
+    <data-source source="LOCAL" name="@localhost" uuid="ce4d2d73-1533-4865-b0d2-8f1b4620740e">
       <driver-ref>mongo</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
-      <jdbc-url>mongodb://localhost:27017</jdbc-url>
+      <jdbc-url>mongodb://localhost:27017/</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="prisma@localhost" uuid="63e6078a-3b3f-483a-96f0-cde8a6fc6563">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/prisma</jdbc-url>
     </data-source>
   </component>
 </project>
