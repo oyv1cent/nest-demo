@@ -1,8 +1,19 @@
 import React from 'react'
-import './App.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+import './App.less'
+import Login from './pages/login'
 
 function App() {
-  return <div className='App'></div>
+  return (
+    <Router>
+      <Switch>
+        <Route path='/login'>
+          <Login />
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App

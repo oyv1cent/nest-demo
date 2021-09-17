@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -6,21 +6,25 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve('./dist'),
-    clean: true
+    clean: true,
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html'
-    })
+      template: 'index.html',
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.less$/i,
+        use: ['style-loader', 'css-loader', 'less-loader'],
       },
       {
         test: /\.tsx?$/,
@@ -33,7 +37,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'raw-loader'
+        loader: 'raw-loader',
       },
       {
         test: /\.html$/,
@@ -41,8 +45,8 @@ module.exports = {
         options: {
           search: '    <script type="module" src="/src/main.tsx"></script>',
           replace: '',
-        }
-      }
+        },
+      },
     ],
   },
-};
+}
