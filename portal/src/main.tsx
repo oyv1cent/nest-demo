@@ -5,16 +5,15 @@ import { SWRConfig } from 'swr'
 
 import App from './App'
 import './index.css'
+import './interceptors'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <SWRConfig
-      value={{
-        errorRetryCount: 3,
-      }}
-    >
-      <App />
-    </SWRConfig>
-  </React.StrictMode>,
+  <SWRConfig
+    value={{
+      errorRetryCount: 3,
+    }}
+  >
+    <App />
+  </SWRConfig>,
   document.getElementById('root'),
 )
